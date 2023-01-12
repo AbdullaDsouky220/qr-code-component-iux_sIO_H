@@ -1,0 +1,50 @@
+// 
+ $White: hsl(0, 0%, 100%);
+ $Light-gray: hsl(212, 45%, 89%);
+ $Grayish-blue: hsl(220, 15%, 55%);
+ $Dark-blue: hsl(218, 44%, 22%);
+// 
+body {
+    font-family: 'Outfit', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:$Light-gray;
+}
+
+// container style
+.container {
+    height: fit-content;
+    width: 300px;
+    display: flex;
+    border-radius: 1em;
+    padding:1em;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    background-color:hsl(0, 0%, 100%) ;
+    .img-container {
+        text-align: center;
+        // flex:2;
+        img {
+            height: 100%;
+            width: 100%;
+            margin: auto;
+            border-radius: 0.5em;
+            // object-fit: contain;
+        }
+    }
+    .container-content {
+        // flex: 1;
+        padding: 0 1em ;
+        text-align: center;
+        h3 {
+            color: $Dark-blue;
+        }
+        p{
+            
+            color: $Grayish-blue;
+        }
+    }
+}
